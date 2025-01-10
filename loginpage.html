@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="em">
+  <head>
+    <title>LOGIN PAGE</title>
+    <style>
+      body {
+        font-family: "Times New Roman", Sans-Serif;
+        color: purple;
+		background-image:url('backimage.jpg');
+		backgroung-repeat=no-repeat;
+		background-size:100%100%;
+		width:50%;
+		padding-left:50px;
+		text-align:center;
+      }
+      .submit-button-container {
+        text-align: center;
+       margin-top:20px;
+      }
+      .submit-button {
+        color: purple;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        box-shadow:5px 5px 10px purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h3 style="text-align:center;color:purple;border-style:solid;border-radius:10px;padding:10px;box-shadow:5px 5px 10px purple">
+        Virtual Course Registration Form
+      </h3>
+    </div>
+    <fieldset style="border:2px solid purple;border-radius:10px;box-shadow:5px 5px 10px purple;">
+      <legend><b>Student Information</b></legend>
+      <div>
+        <label>Student Name: </label>
+        <input type="text" placeholder="Enter Your Name"><br><br>
+        <label>Phone Number: </label>
+        <input type="number" placeholder="Phone Number"><br><br>
+        <label>Gender: </label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other<br><br>
+        <label>Email: </label>
+        <input type="email" placeholder="Enter your Email"><br>
+      </div>
+    </fieldset>
+    <br>
+    <fieldset style="border:2px solid purple;border-radius:10px;box-shadow:5px 5px 10px purple;">
+      <legend><b>Education Information</b></legend>
+      <div>
+        <label>College Name: </label>
+        <input type="text" placeholder="Enter Your College Name"><br><br>
+        <label>Select your Branch: </label>
+        <input type="radio" name="branch" value="ECE"> ECE
+        <input type="radio" name="branch" value="CSE"> CSE
+        <input type="radio" name="branch" value="EEE"> EEE<br><br>
+        <label>Year of Passing: </label>
+        <input type="date"><br>
+      </div>
+    </fieldset>
+    <br>
+    <fieldset style="border:2px solid purple;border-radius:10px;box-shadow:5px 5px 10px purple;">
+      <legend><b>Course Selection Information</b></legend>
+      <div>
+        <label>Interested Domain: </label>
+        <input type="checkbox" value="Core"> Core
+        <input type="checkbox" value="IT"> IT
+        <input type="checkbox" value="Non-IT"> Non-IT<br><br>
+        <label>Select your Course: </label>
+        <select>
+		<optgroup label="IT">
+          <option value="Web development">Web Development</option>
+          <option value="Java fullstack">Java Fullstack</option>
+          <option value="UI/UX designer">UI/UX Designer</option>
+		  </optgroup>
+		  <optgroup label="NON-IT">
+          <option value="SalesManager">sales Manager</option>
+          <option value="MarketingManager">Marketing Manager</option>
+          <option value="VocieAndNonvoice">VocieAndNonvoice</option>
+		  </optgroup>
+		   <optgroup label="Core">
+          <option value="SystemEnginner">SystemEnginner</option>
+          <option value="QualityEnginner">QualityEnginner</option>
+          <option value="VLSI">VLSI</option>
+		  </optgroup>
+        </select><br><br>
+        <label>Month of Joining: </label>
+        <input type="month"><br>
+      </div>
+    </fieldset>
+    <br>
+    <div class="submit-button-container">
+      <input type="submit" value="Submit" class="submit-button">
+    </div>
+  </body>
+</html>
